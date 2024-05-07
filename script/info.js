@@ -15,10 +15,17 @@ fechaInfo.addEventListener('click', () => {
     mapMaker.setAttribute('class', 'none');
     info.setAttribute('class', 'informacoes');
 
-    icone_bacia_do_panara.style.display = 'block';
-    contador_icone_do_parana = true;
+    if(btnBacia.checked){
 
-    bacia_do_panara.style.display = 'none';
+        icone_bacia_do_panara.style.display = 'block';
+        contador_icone_do_parana = true;
+        bacia_do_panara.style.display = 'none';
+    }
+
+    if(btnPocos.checked){
+        
+        infoPocos.style.display ='none';
+    }
 });
 
 function abreInfo(){

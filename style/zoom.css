@@ -1,0 +1,16 @@
+.zoom-es{
+    translate: -7500px -5600px;
+    scale: 12;
+} 
+
+/* .zoom-es{
+    animation: mover 1s;
+}
+
+@keyframes mover {
+    100% {
+
+            transform: translate(-7500px, -5600px);
+            transform: scale(12);
+    }
+} */

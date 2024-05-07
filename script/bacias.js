@@ -1,9 +1,23 @@
 const btnBacia = document.querySelector('#btnBacia');
-
-//bacia do parana
 const icone_bacia_do_panara = document.querySelector('#icone-bacia-do-parana');
 const bacia_do_panara = document.querySelector('#bacia-do-parana');
 let contador_icone_do_parana = true;
+//bacia do parana
+
+
+btnBacia.addEventListener('click', () => {
+
+    if(btnBacia.checked){
+
+        icone_bacia_do_panara.style.display = 'block';
+        mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
+        info.setAttribute('class', 'informacoes block');
+        info.style.backgroundImage="url(img/informacoes.jpg)";
+    } else {
+        
+        icone_bacia_do_panara.style.display = 'none';
+    }
+})
 
 icone_bacia_do_panara.addEventListener('mouseover', () => {
 
@@ -27,23 +41,6 @@ icone_bacia_do_panara.addEventListener('click', () => {
 
 
 //bacia de santos
-const icone_bacia_de_santos = document.querySelector('#icone-bacia-de-santos');
-const icones_bacias = [icone_bacia_do_panara, icone_bacia_de_santos];
 
-btnBacia.addEventListener('click', () => {
 
-    icones_bacias.map((ic) => {
-
-        if(btnBacia.checked){
-
-            ic.style.display = 'block';
-        } else {
-
-            ic.style.display = 'none';
-        }
-    });
-});
-
-const bacias_de_santos = document.querySelector('#bacia-de-santos');
-const bacias = [bacia_do_panara, bacias_de_santos];
 

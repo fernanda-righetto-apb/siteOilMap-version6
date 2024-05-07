@@ -1,10 +1,23 @@
 .informacoes{
     width: 40%;
-    border: 1px solid red;
     display: none;
 }
 
 .setentaPorcento{
     width: 60%;
+}
+
+.informacoes div h6 {
+    font-family: sans-serif;
+}
+
+.informacoes div h6:hover ~ #poco{
+
+    width: 500px;
+}
+
+.info-pocos{
+    
+    display: none;
 }
 
