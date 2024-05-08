@@ -37,6 +37,10 @@ icone_bacia_do_panara.addEventListener('click', () => {
     contador_icone_do_parana = false;
     icone_bacia_do_panara.style.display = 'none';
     abreInfo();
+
+    poco.style.display = 'none';
+    blocos.style.display = 'none';
+    campos.style.display = 'none';
 });
 
 
