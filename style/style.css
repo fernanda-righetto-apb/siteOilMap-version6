@@ -804,16 +804,16 @@
         width: 288px;
     }
     .sobre-os-elementos-main{
-
         display: block;
-    }.elementosSelecionados{
-        left: 19%;
-        top: 4.5%;
+    }
+    /*////////////////////////////////////////////////////////////////////////////////*/
+    .elementosSelecionados{
+        left: 18%;
+        top: 4.2%;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
-        font-size: 2.5vh;
-    }/*////////////////////////////////////////////////////////////////////////////////
-    /*O DÚVIDA TÁ AQUI*/
+        font-size: 1em;
+    }
     .duvida{
         top: 1.8%;
         left: 6%;
@@ -821,30 +821,37 @@
         height: 8%;
         /* border: dashed 2px #000; */
     }
-    /*O CHECKBOX TÁ AQUI*/
+    .mapa__svg{
+        height: 80vh;   
+    }
     .checkbox{
         flex-direction: row;
-        top: 38em;
+        top: 70vh;
         left: 0em;
+        margin: auto;
         text-align: center;
-        padding: 0%;
-        /* border: dashed 2px #000;  */
-    }
+        width: 80%;
+        left: 2em;
+        gap: 10%;
+    }    
     .switch2{
         width: 2.8em;
-        height: 1.6em;
+        height: 1.7em;
+        justify-content: center;
     }
     .slider:before {
         height: 1.2em;
         width: 1.2em;
+        transition: .2s;
+        left: 0.15em;
     }
     .checkbox__name{
         top: 0.5em;
         font-size: 1.8vh;
         left: auto;
     }
-    .input:checked + .slider:before {
-        transform: translateX(10px);
+    input:checked + .slider:before {
+        transform: translateX(15px);
     }
     .soe-some{
         display: none;
