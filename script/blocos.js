@@ -14,3 +14,10 @@ btnBlocos.addEventListener('click', () => {
         blocos.style.display = 'none';
     }
 });
+
+blocos.addEventListener('click', () => {
+
+    poco.style.display = 'none';
+    campos.style.display = 'none';
+    icone_bacia_do_panara.style.display = 'none';
+})
