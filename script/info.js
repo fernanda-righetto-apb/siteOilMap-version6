@@ -4,17 +4,42 @@ const fechaInfo = document.querySelector('#fechaInfo');
 const mapMaker = document.querySelector('#mapMaker');
 
 poco.addEventListener('click', () => {
+
     mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
     info.setAttribute('class', 'informacoes block');
     mapMaker.setAttribute('class', 'block');
     info.style.backgroundImage="url(img/informacoes.jpg)";
+    
+    blocos.style.display = 'none';
+    campos.style.display = 'none';
+    icone_bacia_do_panara.style.display = 'none';
 });
 
 fechaInfo.addEventListener('click', () => {
-    mapa__svg.setAttribute('class', 'mapa__svg');
-    mapMaker.setAttribute('class', 'none');
-    info.setAttribute('class', 'informacoes');
+    if(btnPocos.checked){
 
+
+    } else if(btnBlocos.checked) {
+
+
+
+    } else if(btnCampos.checked){
+
+
+    } else if(btnBacia.checked){
+
+
+    }  else {
+
+        info.setAttribute('class', 'informacoes');
+        mapa__svg.setAttribute('class', 'mapa__svg');
+        mapMaker.setAttribute('class', 'none');
+    }
+
+    
+    
+    
+    
     if(btnBacia.checked){
 
         icone_bacia_do_panara.style.display = 'block';
