@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="style/blocos.css">
         <link rel="stylesheet" href="style/campos.css">
         <link rel="stylesheet" href="style/zoom.css">
-    <body>
+    <body onload="teste()">
       <header id="header">
         
         <div class="header2" id="header2">
@@ -238,7 +238,7 @@
                     </div>
                     </div>
                     <img src="img/filtro.png" class="img__filtro" id="imgFiltro">
-                    <img src="img/Group 2.svg" class="duvida" id="duvida">
+                    <button  ><img src="img/Group 2.svg" class="duvida" onclick="AbreModalInfos()" ></button>
                     </div>
                     <div class="informacoes" id="info">
                         <button id="fechaInfo">Fechar</button>
@@ -344,32 +344,36 @@
             
          <!--FIM FILTRO INPUTS E DO LADO DIREITO AO LADO DO MAPA -->   
         </div>
-        <section class="ajuda none" id="ajuda">
-            <div class="ajuda1">
-                <div class="ajuda1_1">
-                <div class="texto1">Para ter acesso aos elementos no mapa, escolha qual elemento deseja visualizar, dessa forma, clique no botão poços, blocos, campos ou bacias para verificar.</div>
-                <div class="texto2">Exemplo abaixo:</div>
+        <div class="modal_info2" id="Modal_info">
+            <div class="hehe2">
+                <div class="modal_info_conteudo2">
+    
+                    <div class="btn_x2"><button onclick="fechaModalInfos()"><img src="img/x.png" style="height: calc(1em + 1vw)"></button></div>
+        
+                    <div class="modal_recheio2">
+                        <div class="amarelo2">
+                            <h4>Para ter acesso aos elemntos no mapa, escolha qual elemnto deseja visualizar, dessa forma, clique no botão poços,blocos,campos ou bacias para verificar.<br>Exemplo abaixo</h4>
+                        </div>
+                        <div class="conteudoEx2">
+                                <div class="imagemEx2">
+                                    <img src="img/1-info.png" alt="" class="imgInfo2">
+                                </div>
+                                <div class="imagemEx2">
+                                    <img src="img/2-info.png" alt="" class="imgInfo2">
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <div class="ajuda2">
-                <div class="img1">
-                    <img src="img/image 50.png" class="img1_1">
-                </div>
-                <div class="img2">
-                    <img src="img/image 51.png" class="img2_1">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
+        </div>
 
         <div class="menuSobe" id="menuSobe">
-            <div style="display: grid;">
-                 <button onclick="sobeMenu('menu')"><img src="img/x.png" alt=""></button>
-                 <h1 id="titulo">Navegue nas Seções:</h1>
+            <div style="display: grid">
+                <div class="inicio" id="inicio">
+                    <button onclick="sobeMenu2(0)"><img src="img/x.png" alt=""></button>
+                    <h1 id="titulo">Navegue nas Seções:</h1>
+                </div>
+                 
      
      
                  <nav class="nav">  

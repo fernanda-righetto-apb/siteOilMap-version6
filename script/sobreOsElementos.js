@@ -9,3 +9,11 @@ sobreOsElementos.addEventListener('click', () => {
 x2.addEventListener('click', () => {
     sobreOsElementos2.style.display = 'none';
 })
+
+const menu = document.getElementById('Modal_info');
+function fechaModalInfos(){
+    menu.style.display = 'none';
+}
+function AbreModalInfos(){
+    menu.style.display = 'block';
+}
