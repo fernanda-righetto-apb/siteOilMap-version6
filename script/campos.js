@@ -9,8 +9,17 @@ btnCampos.addEventListener('click', () => {
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
+
+        
     } else {
 
         campos.style.display = 'none';
     }
+})
+
+campos.addEventListener('click', () => {
+
+    poco.style.display = 'none';
+    blocos.style.display = 'none';
+    icone_bacia_do_panara.style.display = 'none';
 })
