@@ -16,6 +16,7 @@ btnBacia.addEventListener('click', () => {
     } else {
         
         icone_bacia_do_panara.style.display = 'none';
+        info.setAttribute('class', 'informacoes');
     }
 })
 
@@ -41,6 +42,7 @@ icone_bacia_do_panara.addEventListener('click', () => {
     poco.style.display = 'none';
     blocos.style.display = 'none';
     campos.style.display = 'none';
+    infoPocos.style.display = 'none';
 });
 
 

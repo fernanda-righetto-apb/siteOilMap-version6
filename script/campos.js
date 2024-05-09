@@ -14,6 +14,7 @@ btnCampos.addEventListener('click', () => {
     } else {
 
         campos.style.display = 'none';
+        info.setAttribute('class', 'informacoes');
     }
 })
 
@@ -22,4 +23,5 @@ campos.addEventListener('click', () => {
     poco.style.display = 'none';
     blocos.style.display = 'none';
     icone_bacia_do_panara.style.display = 'none';
+    infoPocos.style.display = 'none';
 })

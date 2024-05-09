@@ -3,17 +3,6 @@ const mapa__svg = document.querySelector('#mapa__svg');
 const fechaInfo = document.querySelector('#fechaInfo');
 const mapMaker = document.querySelector('#mapMaker');
 
-poco.addEventListener('click', () => {
-
-    mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
-    info.setAttribute('class', 'informacoes block');
-    mapMaker.setAttribute('class', 'block');
-    info.style.backgroundImage="url(img/informacoes.jpg)";
-    
-    blocos.style.display = 'none';
-    campos.style.display = 'none';
-    icone_bacia_do_panara.style.display = 'none';
-});
 
 fechaInfo.addEventListener('click', () => {
     if(btnPocos.checked){
@@ -33,12 +22,8 @@ fechaInfo.addEventListener('click', () => {
 
         info.setAttribute('class', 'informacoes');
         mapa__svg.setAttribute('class', 'mapa__svg');
-        mapMaker.setAttribute('class', 'none');
+        
     }
-
-    
-    
-    
     
     if(btnBacia.checked){
 
@@ -49,8 +34,11 @@ fechaInfo.addEventListener('click', () => {
 
     if(btnPocos.checked){
         
-        infoPocos.style.display ='none';
+        infoPocos.style.display ='block';
     }
+
+    mapMaker.setAttribute('class', 'none');
+    
 });
 
 function abreInfo(){
