@@ -35,6 +35,7 @@ fechaInfo.addEventListener('click', () => {
     if(btnPocos.checked){
         
         infoPocos.style.display ='block';
+        poco.style.display = 'block';
     }
 
     mapMaker.setAttribute('class', 'none');
