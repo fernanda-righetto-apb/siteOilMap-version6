@@ -9,7 +9,11 @@ btnBlocos.addEventListener('click', () => {
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
-    } else {
+    } else if(btnPocos.checked || btnCampos.checked || btnBacia.checked){
+
+        blocos.style.display = 'none';
+    } 
+    else {
 
         blocos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
