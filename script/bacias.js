@@ -13,6 +13,9 @@ btnBacia.addEventListener('click', () => {
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
+    } else if(btnPocos.checked || btnBlocos.checked || btnCampos.checked) {
+
+        icone_bacia_do_panara.style.display = 'none';
     } else {
         
         icone_bacia_do_panara.style.display = 'none';
