@@ -8,10 +8,24 @@ btnPocos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
-    } else {
+    } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
+
+        poco.setAttribute('class', 'none');
+        infoPocos.style.display ='none';        
+    } 
+    /*else if(btnCampos.checked) {
+
         poco.setAttribute('class', 'none');
         infoPocos.style.display ='none';
+    } else if(btnBacia.checked) {
+
+        poco.setAttribute('class', 'none');
+        infoPocos.style.display ='none';
+    }*/
+    else {
         info.setAttribute('class', 'informacoes');
+        poco.setAttribute('class', 'none');
+        infoPocos.style.display ='none';
     }
 });
 
