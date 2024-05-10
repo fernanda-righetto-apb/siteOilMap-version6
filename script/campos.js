@@ -11,6 +11,9 @@ btnCampos.addEventListener('click', () => {
         info.style.backgroundImage="url(img/informacoes.jpg)";
 
         
+    } else if(btnPocos.checked || btnBlocos.checked || btnBacia.checked) {
+
+        campos.style.display = 'none';
     } else {
 
         campos.style.display = 'none';
