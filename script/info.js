@@ -25,17 +25,28 @@ fechaInfo.addEventListener('click', () => {
         
     }
     
+    
+
+    if(btnPocos.checked){
+        
+        infoPocos.style.display = 'block';
+    }
+
+    if(btnBlocos.checked){
+
+        blocos.style.display = 'block';
+    }
+
+    if(btnCampos.checked){
+
+        campos.style.display = 'block';     
+    }
+
     if(btnBacia.checked){
 
         icone_bacia_do_panara.style.display = 'block';
         contador_icone_do_parana = true;
         bacia_do_panara.style.display = 'none';
-    }
-
-    if(btnPocos.checked){
-        
-        infoPocos.style.display ='block';
-        poco.style.display = 'block';
     }
 
     mapMaker.setAttribute('class', 'none');
