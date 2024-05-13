@@ -2,6 +2,7 @@ const info = document.querySelector('#info');
 const mapa__svg = document.querySelector('#mapa__svg');
 const fechaInfo = document.querySelector('#fechaInfo');
 const mapMaker = document.querySelector('#mapMaker');
+const infoElementos = document.querySelector(".info-Elementos");
 
 
 fechaInfo.addEventListener('click', () => {
@@ -22,6 +23,7 @@ fechaInfo.addEventListener('click', () => {
 
         info.setAttribute('class', 'informacoes');
         mapa__svg.setAttribute('class', 'mapa__svg');
+        
         
     }
     
@@ -50,6 +52,8 @@ fechaInfo.addEventListener('click', () => {
     }
 
     mapMaker.setAttribute('class', 'none');
+    infoElementos.style.display = 'none';
+    
     
 });
 

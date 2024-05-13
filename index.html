@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="style/blocos.css">
         <link rel="stylesheet" href="style/campos.css">
         <link rel="stylesheet" href="style/zoom.css">
+        <link rel="stylesheet" href="style/infoElementos.css">
     <body onload="teste()">
       <header id="header">
         
@@ -68,7 +69,7 @@
             <div>
                 <section class="grid grid-template-columns-1">
                     <h6 class="item"><a href="https://petrobras.com.br/pt/quem-somos/">Quem Somos</a></h6>
-                    <h6 class="item"><a href="https://petrobras.com.br/pt/nossas-atividades/">Nossas Atividades</a></h6>
+                    <h6 class="item"><a href="https://petrobras.com.br/pre-sal/">Pré-Sal</a></h6>
                     <h6 class="item"><a href="https://petrobras.com.br/pt/sociedade-e-meio-ambiente/">Sociedade e Meio Ambiente</a></h6>
                     <h6 class="item"><a href="https://tecnologia.petrobras.com.br/?_ga=2.16318134.183531101.1695930852-473754522.1695930852&_gl=1*gz2mg4*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTI5Ni4zMy4wLjA.">Tecnologia e Inovação</a></h6>
                     <h6 class="item"><a href="https://transparencia.petrobras.com.br/?_gl=1*2porjz*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMxMi4xNy4wLjA.">Acesso à Informação</a></h6>
@@ -247,11 +248,26 @@
                             <h2>Poços</h2>
                             <h6>1-SHEL-35A-RJS</h6>
                         </div>
+                        <div class="info-Elementos">
+                            <h4>1-SHEL-35A-RJS</h4>
+                                <ul id="detalhesPoco" class="detalhesPoco">   
+                                    <li><strong>Operador -</strong> Shell Brasil</li>
+                                    <li><strong>Titularidade -</strong> Público</li>
+                                    <li><strong>Categoria -</strong> Pioneiro</li>
+                                    <li><strong>Tipo - </strong>Exploratório</li>
+                                    <li><strong>Estado -</strong> Rio de Janeiro (RJ)</li>
+                                    <li><strong>Nome Bloco -</strong> C-M-791</li>
+                                    <li><strong>Situação -</strong> Abandonado Permanentemente</li>
+                                    <li><strong>Data Início -</strong> 24/01/2022</li>
+                                    <li><strong>Data Término -</strong> 23/03/2022</li>
+                                    <li><strong>Data Conclusão -</strong> 05/04/2022</li>
+                                </ul>
+                        </div>
                     </div>
                     <div class="pesquisa1" id="pesquisa1">
                         <div class="pesquisa">
-                            <img src="img/Vector.png">
-                            <input placeholder="Pesquisar...">
+                            <img src="img/Vector.png" id="imgPesquisa">
+                            <input placeholder="Pesquisar..." type="text" class="filtro-pesquisa">
                             <img src="img/voice 1.png">
                         </div>
                     </div>

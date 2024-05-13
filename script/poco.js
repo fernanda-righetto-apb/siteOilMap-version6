@@ -27,6 +27,8 @@ btnPocos.addEventListener('click', () => {
         poco.setAttribute('class', 'none');
         infoPocos.style.display ='none';
     }
+
+    mapMaker.setAttribute('class', 'none');
 });
 
 poco.addEventListener('click', () => {
@@ -40,4 +42,5 @@ poco.addEventListener('click', () => {
     campos.style.display = 'none';
     icone_bacia_do_panara.style.display = 'none';
     infoPocos.style.display = 'none';
+    infoElementos.style.display = 'block';
 });

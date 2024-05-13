@@ -80,6 +80,10 @@
         top: 2px;
         z-index: 1;
     }
+
+    .filtro{
+        height: 610px;
+    }
 }
 
 @media screen and (max-width: 1440px){
@@ -128,7 +132,7 @@
 
     .filtro{
         border-radius: 2.6em;
-        height: 550px;
+        height: 520px;
     }
 
     .filtro .titulo{
@@ -174,8 +178,62 @@
 
     .footer{
         /* font-size: 16px; */
-        min-height: 7vh;
+        min-height: 10vh;
     }
+
+}
+
+@media screen and (max-width: 1280px){
+    .filtro{
+        height: 448px;
+    }
+
+    .filtro .titulo{
+        margin: 8%;
+        border-top: 5px solid #ffd200;
+        font-size: 25px;
+    }
+
+    .filtro .txt{
+        font-size: 12px;
+    }
+
+    .peneira h3{
+        font-size: 14px;
+    }
+
+    .peneira h4 a{
+        font-size: 8px;
+    }
+
+    .peneira .input{
+        height: 32px;
+
+    }
+
+    .peneira .btn{
+        font-size: 1em;
+    }
+
+    .txt{
+        margin: 3%;
+    }
+    
+    .btn_container .btn2{
+        font-size: .8em;
+        /* height: 2.5vh; */
+        width: 4vw;
+        /* margin-top: -5px; */
+    }
+
+    .btn{
+        height: 3.5vh;
+    }
+
+    .pesquisa input {
+        width: 150px;
+    }
+
 }
 
 @media screen and (max-width: 1024px){
@@ -218,7 +276,7 @@
 
     .filtro{
         border-radius: 2.5em;
-        height: 520px;
+        height: 490px;
     }
 
     .filtro .titulo{
@@ -228,7 +286,7 @@
     }
 
     .filtro .txt{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .peneira h3{

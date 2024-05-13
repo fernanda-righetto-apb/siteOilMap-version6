@@ -1,5 +1,5 @@
 const btn_filtrar = document.querySelector('#btn-filtrar');
-
+const imgPesquisa = document.querySelector('#imgPesquisa');
 
 btn_filtrar.addEventListener('click', () => {
 
@@ -17,4 +17,19 @@ btn_filtrar.addEventListener('click', () => {
         
         poco.style.display = 'block';
     }
+
+    else{
+        poco.style.display = 'none';
+    }
 });
+
+imgPesquisa.addEventListener('click', () => {
+    const filtro_pesquisa = document.querySelector('.filtro-pesquisa').value;
+
+    if(filtro_pesquisa === '1-SHEL-35A-RJS'){
+        poco.style.display = 'block';
+        mapMaker.setAttribute('class', 'block');        
+    }
+
+    
+})
