@@ -21,18 +21,6 @@
     display: none;
 }
 
-.info-blocos{
-  display: none;
-}
-
-.info-campos{
-  display: none;
-}
-
-.info-bacias{
-  display: none;
-}
-
 .modal_info2{
     display: none;
     position: fixed;
