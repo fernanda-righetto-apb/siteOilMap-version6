@@ -27,8 +27,11 @@ imgPesquisa.addEventListener('click', () => {
     const filtro_pesquisa = document.querySelector('.filtro-pesquisa').value;
 
     if(filtro_pesquisa === '1-SHEL-35A-RJS'){
+        abreInfo();
+        infoElementos.style.display = 'block';
         poco.style.display = 'block';
-        mapMaker.setAttribute('class', 'block');        
+        mapMaker.setAttribute('class', 'block');
+       
     }
 
     

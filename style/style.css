@@ -184,6 +184,10 @@
         /* font-size: 16px; */
         min-height: 10vh;
     }
+
+    #sobreOsElementos1{
+        display: none;
+    }
 }
 
 
@@ -572,6 +576,10 @@
 
     .footer__painel{
         z-index: 1;
+    }
+
+    #sobreOsElementos1{
+        display: block;
     }
 
 
