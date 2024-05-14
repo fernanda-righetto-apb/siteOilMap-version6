@@ -23,11 +23,17 @@ btn_filtrar.addEventListener('click', () => {
     }
 });
 
+const filtro_pesquisa = document.querySelector('.filtro-pesquisa');
 imgPesquisa.addEventListener('click', () => {
-    const filtro_pesquisa = document.querySelector('.filtro-pesquisa').value;
+    
+    const filtro_pesquisa2 = filtro_pesquisa.value;
+    if(filtro_pesquisa2 === '1-SHEL-35A-RJS'){
 
-    if(filtro_pesquisa === '1-SHEL-35A-RJS'){
+        mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
+        info.setAttribute('class', 'informacoes block');
+        info.style.backgroundImage="url(img/informacoes.jpg)";
         poco.style.display = 'block';
+        infoElementos.style.display = 'block';
         mapMaker.setAttribute('class', 'block');        
     }
 

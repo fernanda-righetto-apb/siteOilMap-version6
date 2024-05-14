@@ -8,6 +8,7 @@ btnPocos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
+        infoElementos.style.display = 'none';
     } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
 
         poco.setAttribute('class', 'none');

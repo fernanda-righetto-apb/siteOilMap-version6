@@ -1,11 +1,12 @@
 const campos = document.querySelector('#campos');
 const btnCampos = document.querySelector('#btn-campos');
+const iconeCampos = document.querySelector('#icone-campos');
 
 btnCampos.addEventListener('click', () => {
 
     if(btnCampos.checked){
 
-        campos.style.display = 'block';
+        iconeCampos.style.display = 'block';
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
@@ -13,15 +14,19 @@ btnCampos.addEventListener('click', () => {
         
     } else if(btnPocos.checked || btnBlocos.checked || btnBacia.checked) {
 
-        campos.style.display = 'none';
+        iconeCampos.style.display = 'none';
     } else {
 
-        campos.style.display = 'none';
+        iconeCampos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
     }
 })
 
-campos.addEventListener('click', () => {
+iconeCampos.addEventListener('click', () => {
+    
+    zoom.setAttribute('class', 'zoom-es');
+    iconeCampos.style.display = 'none';
+    campos.style.display = 'block';
 
     poco.style.display = 'none';
     blocos.style.display = 'none';

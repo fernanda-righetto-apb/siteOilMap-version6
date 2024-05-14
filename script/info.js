@@ -23,15 +23,14 @@ fechaInfo.addEventListener('click', () => {
 
         info.setAttribute('class', 'informacoes');
         mapa__svg.setAttribute('class', 'mapa__svg');
-        
-        
     }
     
     
 
     if(btnPocos.checked){
-        
         infoPocos.style.display = 'block';
+    } else {
+        poco.style.display = 'none';
     }
 
     if(btnBlocos.checked){
@@ -40,8 +39,9 @@ fechaInfo.addEventListener('click', () => {
     }
 
     if(btnCampos.checked){
-
-        campos.style.display = 'block';     
+        iconeCampos.style.display = 'block';
+        campos.style.display = 'none';     
+        zoom.removeAttribute('class', 'zoom-es');
     }
 
     if(btnBacia.checked){
@@ -54,7 +54,7 @@ fechaInfo.addEventListener('click', () => {
     mapMaker.setAttribute('class', 'none');
     infoElementos.style.display = 'none';
     
-    
+    filtro_pesquisa.value = "";
 });
 
 function abreInfo(){
