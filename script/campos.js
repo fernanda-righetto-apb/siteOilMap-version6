@@ -17,11 +17,13 @@ btnCampos.addEventListener('click', () => {
 
         iconeCampos.style.display = 'none';
         zoom.removeAttribute('class', 'zoom-es');
+        campos.style.display = 'none';
     } else {
 
         iconeCampos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
         zoom.removeAttribute('class', 'zoom-es');
+        campos.style.display = 'none';
     }
 })
 
