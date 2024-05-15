@@ -1,6 +1,7 @@
 const campos = document.querySelector('#campos');
 const btnCampos = document.querySelector('#btn-campos');
 const iconeCampos = document.querySelector('#icone-campos');
+let contadorIconeCampos = true;
 
 btnCampos.addEventListener('click', () => {
 
@@ -15,10 +16,12 @@ btnCampos.addEventListener('click', () => {
     } else if(btnPocos.checked || btnBlocos.checked || btnBacia.checked) {
 
         iconeCampos.style.display = 'none';
+        zoom.removeAttribute('class', 'zoom-es');
     } else {
 
         iconeCampos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
+        zoom.removeAttribute('class', 'zoom-es');
     }
 })
 
