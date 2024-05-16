@@ -18,23 +18,6 @@
     width: 500px;
 }
 
-.info-pocos{
-    
-    display: none;
-}
-
-.info-bacias{
-    display: none;
-}
-
-.info-blocos{
-  display: none;
-}
-
-.info-campos{
-  display: none;
-}
-
 .modal_info2{
     display: none;
     position: fixed;
