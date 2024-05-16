@@ -13,3 +13,7 @@
 #bacia-do-parana{
     filter: invert(96%) sepia(8%) saturate(2082%) hue-rotate(317deg) brightness(104%) contrast(92%);
 }
+
+.info-bacias{
+    display: none;
+}
