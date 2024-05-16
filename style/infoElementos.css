@@ -3,7 +3,7 @@
     display: none;
     border: 1px solid #fff;
     width: 90%;
-    padding: .8rem;
+    padding: .2rem;
     align-items: center;
     margin: 1rem .6rem;
 }
@@ -21,7 +21,9 @@
     color: #143614;
     
 }
-
+.info-Elementos ul{
+    padding: .3rem;
+}
 
 .info-Elementos ul li{
     /* display: block; */
@@ -32,6 +34,7 @@
     margin-block-end: .8em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    
 }
 
 .filtro-pesquisa{

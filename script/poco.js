@@ -8,11 +8,13 @@ btnPocos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
-        infoElementos.style.display = 'none';
+        detalhesPoco.style.display = 'none';
+       
     } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
 
         poco.setAttribute('class', 'none');
-        infoPocos.style.display ='none';        
+        infoPocos.style.display ='none';   
+           
     } 
     /*else if(btnCampos.checked) {
 
@@ -43,5 +45,5 @@ poco.addEventListener('click', () => {
     campos.style.display = 'none';
     icone_bacia_do_panara.style.display = 'none';
     infoPocos.style.display = 'none';
-    infoElementos.style.display = 'block';
+    detalhesPoco.style.display = 'block';
 });

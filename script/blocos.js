@@ -1,5 +1,6 @@
 const btnBlocos = document.querySelector('#btn-blocos');
 const blocos = document.querySelector('#blocos');
+// const infoBlocos = document.querySelector('#info-blocos');
 
 btnBlocos.addEventListener('click', () => {
 
@@ -12,11 +13,13 @@ btnBlocos.addEventListener('click', () => {
     } else if(btnPocos.checked || btnCampos.checked || btnBacia.checked){
 
         blocos.style.display = 'none';
+
     } 
     else {
 
         blocos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
+      
     }
 });
 
@@ -26,4 +29,5 @@ blocos.addEventListener('click', () => {
     campos.style.display = 'none';
     icone_bacia_do_panara.style.display = 'none';
     infoPocos.style.display = 'none';
+    
 })

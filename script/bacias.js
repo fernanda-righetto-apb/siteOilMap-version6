@@ -17,11 +17,13 @@ btnBacia.addEventListener('click', () => {
 
         icone_bacia_do_panara.style.display = 'none';
         bacia_do_panara.style.display = 'none';
+        
     } else {
         
         icone_bacia_do_panara.style.display = 'none';
         info.setAttribute('class', 'informacoes');
         bacia_do_panara.style.display = 'none';
+        
     }
 })
 

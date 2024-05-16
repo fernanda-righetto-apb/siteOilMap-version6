@@ -2,6 +2,8 @@ const info = document.querySelector('#info');
 const mapa__svg = document.querySelector('#mapa__svg');
 const fechaInfo = document.querySelector('#fechaInfo');
 const mapMaker = document.querySelector('#mapMaker');
+const detalhesPoco = document.querySelector(".detalhesPoco");
+// const detalhesBlocos = document.querySelector(".detalhesBlocos");
 const infoElementos = document.querySelector(".info-Elementos");
 
 
@@ -34,10 +36,9 @@ fechaInfo.addEventListener('click', () => {
     }
 
     if(btnBlocos.checked){
-
         blocos.style.display = 'block';
-    }
-
+    } 
+    
     if(btnCampos.checked){
         iconeCampos.style.display = 'block';
         campos.style.display = 'none';     
@@ -53,6 +54,8 @@ fechaInfo.addEventListener('click', () => {
 
     mapMaker.setAttribute('class', 'none');
     infoElementos.style.display = 'none';
+   
+    
     
     filtro_pesquisa.value = "";
 });

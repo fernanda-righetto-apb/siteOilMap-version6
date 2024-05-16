@@ -13,7 +13,7 @@ btn_filtrar.addEventListener('click', () => {
         (filtro_tipo === '1') || 
         (filtro_terra_mar === 'M') ||
         (filtro_situacao === 'Em perfuração') || 
-        (filtro_estado === 'RJ')){
+        (filtro_estado === 'Rio de Janeiro - RJ')){
         
         poco.style.display = 'block';
     }
@@ -33,7 +33,7 @@ imgPesquisa.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
         poco.style.display = 'block';
-        infoElementos.style.display = 'block';
+        detalhesPoco.style.display = 'block';
         mapMaker.setAttribute('class', 'block');        
     }
 

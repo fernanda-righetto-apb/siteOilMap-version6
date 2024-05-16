@@ -7,4 +7,9 @@
 .icone-bacia{
 
     display: none;
+    filter: invert(15%) sepia(60%) saturate(4526%) hue-rotate(226deg) brightness(98%) contrast(124%);
 }
+
+/* #bacia-do-parana{
+    filter: invert(96%) sepia(8%) saturate(2082%) hue-rotate(317deg) brightness(104%) contrast(92%);
+} */

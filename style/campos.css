@@ -3,3 +3,7 @@
     display: none;
     fill: red;
 }
+
+#icone-campos{
+     filter: invert(93%) sepia(13%) saturate(286%) hue-rotate(69deg) brightness(103%) contrast(95%);
+}

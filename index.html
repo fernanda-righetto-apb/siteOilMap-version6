@@ -249,19 +249,58 @@
                             <h2>Poços</h2>
                             <h6>1-SHEL-35A-RJS</h6>
                         </div>
-                        <div class="info-Elementos">
+                        <div class="info-Elementos detalhesPoco">
                             <h4>1-SHEL-35A-RJS</h4>
-                                <ul id="detalhesPoco" class="detalhesPoco">   
+                                <ul id="detalhesPoco">   
                                     <li><strong>Operador -</strong> Shell Brasil</li>
                                     <li><strong>Titularidade -</strong> Público</li>
                                     <li><strong>Categoria -</strong> Pioneiro</li>
                                     <li><strong>Tipo - </strong>Exploratório</li>
+                                    <li><strong>Ambiente - </strong>Mar</li>
                                     <li><strong>Estado -</strong> Rio de Janeiro (RJ)</li>
                                     <li><strong>Nome Bloco -</strong> C-M-791</li>
                                     <li><strong>Situação -</strong> Abandonado Permanentemente</li>
                                     <li><strong>Data Início -</strong> 24/01/2022</li>
                                     <li><strong>Data Término -</strong> 23/03/2022</li>
                                     <li><strong>Data Conclusão -</strong> 05/04/2022</li>
+                                    <li><strong>Data Atualização Dados -</strong></li>
+                                    <li><strong>Data Término -</strong> 23/03/2022</li>
+                                    <li><strong>Data Conclusão -</strong> 05/04/2022</li>
+                                    <li><strong>Data Atualização Dados -</strong></li>
+                                </ul>
+                        </div>
+                        <div class="info-blocos" id="info-blocos">
+                            <h2>Blocos</h2>
+                            <h6>PAR-T-215</h6>
+                        </div>
+                        <div class="info-Elementos detalhesBlocos">
+                            <h4>PAR-T-215</h4>
+                                <ul id="detalhesBlocos">   
+                                    <li><strong>Operador -</strong> Eneva S.A</li>
+                                    <li><strong>Bacia -</strong> Paraná</li>
+                                    <li><strong>Data Atualização Dados -</strong> </li>
+                                </ul>
+                        </div>
+                        <div class="info-Elementos detalhesCampos">
+                            <h4>Campo Grande</h4>
+                                <ul id="detalhesCampos">   
+                                    <li><strong>Número do Contrato -</strong> 48000.003737/97-16</li>
+                                    <li><strong>Bacia -</strong> Espírito Santo</li>
+                                    <li><strong>Operador -</strong> Petróleo Brasileiro S.A</li>
+                                    <li><strong>Localização -</strong> Terra</li>
+                                    <li><strong>Fluído Principal -</strong> Óleo</li>
+                                    <li><strong>Situação -</strong> Produção</li>
+                                    <li><strong>Descoberta -</strong> 14/05/1975</li>
+                                    <li><strong>Início da Produção -</strong> 31/08/1975</li>
+                                    <li><strong>Previsão de Término de Produção -</strong> </li>
+                                    <li><strong>Data Atualização Dados -</strong> </li>
+                                </ul>
+                        </div>
+                        <div class="info-Elementos detalhesBacias">
+                            <h4>PAR-T-215</h4>
+                                <ul id="detalhesBacias">   
+                                    <li><strong>Situação -</strong> Paraná</li>
+                                    <li><strong>Data Atualização Dados -</strong></li>
                                 </ul>
                         </div>
                     </div>
@@ -291,8 +330,13 @@
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Tipo de material, isto é, fluído a ser produzido/extraído do poço: gás natual ou óleo.">?</div>
-                            <h3>Material</h3>
-                            <input class="input2">
+                            <h3>Terra_Mar</h3>
+                                <select class="input2" id="filtro-terra-marr">
+                                    <option>Selecione a opção</option>
+                                    <option>T</option>
+                                    <option>M</option>
+                                </select>
+                            <!-- <input class="input2"> -->
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Qualificação do poço de acordo com o estado mecânico atual e condição operacional. Exemplo: fechado, aberto, ativo, desativado.">?</div>
@@ -345,7 +389,13 @@
                     <h3>Situação</h3><input class="input" type="text" id="filtro-situacao">
                 </div>
                 <div class="peneira">
-                    <h3>Estado</h3><input class="input" type="text" id="filtro-estado">
+                    <h3>Estado</h3>
+                    <select class="input" id="filtro-estado">
+                        <option>Selecione a opção</option>
+                        <option>Rio de Janeiro - RJ</option>
+                        <option>Paraná - PR</option>
+                    </select>
+                    <!-- <input class="input" type="text" id="filtro-estado"> -->
                 </div>
 
                 <div class="peneira">
