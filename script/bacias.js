@@ -2,6 +2,7 @@ const btnBacia = document.querySelector('#btnBacia');
 const icone_bacia_do_panara = document.querySelector('#icone-bacia-do-parana');
 const bacia_do_panara = document.querySelector('#bacia-do-parana');
 let contador_icone_do_parana = true;
+const infoBacias = document.querySelector('#info-bacias');
 //bacia do parana
 
 
@@ -13,17 +14,19 @@ btnBacia.addEventListener('click', () => {
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
+        infoBacias.style.display = 'block';
     } else if(btnPocos.checked || btnBlocos.checked || btnCampos.checked) {
 
         icone_bacia_do_panara.style.display = 'none';
         bacia_do_panara.style.display = 'none';
+        infoBacias.style.display = 'none';
         
     } else {
         
         icone_bacia_do_panara.style.display = 'none';
         info.setAttribute('class', 'informacoes');
         bacia_do_panara.style.display = 'none';
-        
+        infoBacias.style.display = 'none';
     }
 })
 

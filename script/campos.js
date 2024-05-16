@@ -2,6 +2,7 @@ const campos = document.querySelector('#campos');
 const btnCampos = document.querySelector('#btn-campos');
 const iconeCampos = document.querySelector('#icone-campos');
 let contadorIconeCampos = true;
+const infoCampos = document.querySelector('#info-campos');
 
 btnCampos.addEventListener('click', () => {
 
@@ -11,19 +12,21 @@ btnCampos.addEventListener('click', () => {
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
-
+        infoCampos.style.display = 'block';
         
     } else if(btnPocos.checked || btnBlocos.checked || btnBacia.checked) {
 
         iconeCampos.style.display = 'none';
         zoom.removeAttribute('class', 'zoom-es');
         campos.style.display = 'none';
+        infoCampos.style.display = 'none';
     } else {
 
         iconeCampos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
         zoom.removeAttribute('class', 'zoom-es');
         campos.style.display = 'none';
+        infoCampos.style.display = 'none';
     }
 })
 
