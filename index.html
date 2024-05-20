@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="style/sobeMenu.css">
         <link rel="stylesheet" href="style/pesquisar.css">
         <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/pocos.css">
         <link rel="stylesheet" href="./style/bacia.css">
         <link rel="stylesheet" href="style/blocos.css">
         <link rel="stylesheet" href="style/campos.css">
@@ -323,6 +322,7 @@
                         </div>
                     </div>
                 </div>
+                    <!--<div id="filtro2" class="filtro2"></div> -->
                     <div class="filtro2" id="filtro2">
                         <div class="tituloNoCentro">
                         <h1 class="titulo2">FILTRAR POR</h1>
@@ -331,17 +331,17 @@
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Nome fantasia do operador(concessionário), ou seja, é a empresa responsável pelo poço.">?</div>
                             <h3>Operador</h3>
-                            <input class="input2 filtro-operador2">
+                            <input class="input2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Finalidade principal original do poço. Há dez categorias! Exemplo: Poço Exploratório Pioneiro">?</div>
-                            <h3>Tipo</h3>
-                            <input class="input2 filtro-tipo2">
+                            <h3>Categoria</h3>
+                            <input class="input2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Tipo de material, isto é, fluído a ser produzido/extraído do poço: gás natual ou óleo.">?</div>
                             <h3>Terra_Mar</h3>
-                                <select class="input2 filtro-terra-mar2">
+                                <select class="input2" id="filtro-terra-marr">
                                     <option>Selecione a opção</option>
                                     <option>T</option>
                                     <option>M</option>
@@ -351,20 +351,21 @@
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Qualificação do poço de acordo com o estado mecânico atual e condição operacional. Exemplo: fechado, aberto, ativo, desativado.">?</div>
                             <h3>Situação</h3>
-                            <input class="input2 filtro-situacao2">
+                            <input  class="input2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Local onde estão situados os poços, blocos, bacias e campos (quando aplicável).">?</div>
                             <h3>Estado</h3>
-                            <select class="input filtro-estado2">
-                                <option>Selecione a opção</option>
-                                <option>Rio de Janeiro - RJ</option>
-                                <option>Paraná - PR</option>
-                            </select>
+                            <input  class="input2">
                         </div>
+                        <!-- <div class="peneira2 peneira3">
+                            <div class="interrogacao">?</div>
+                            <h3>Nome</h3>
+                            <input class="input2">
+                        </div> -->
                         <div class="peneira2 peneira4">
                             <div></div>
-                            <button class="btn3" id="btn-filtrar2" onclick="btnFiltrar3()">Filtrar</button>
+                            <button class="btn3">Filtrar</button>
                         </div>
                         <h4 class="txt2 txt2-inferior">Para informações sobre os <a class="filtro2__links">Poços, Blocos, Campos</a> e <a class="filtro2__links">Bacias</a> clique abaixo</h4>
                         <div class="btn_container2">
@@ -379,15 +380,15 @@
                 <h1 class="titulo" style="color: #4EAB7F;">FILTRAR POR</h1>
                 <h4 class="txt">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
                 <div class="peneira">
-                    <h3>Operador</h3><input class="input filtro-operador" type="text">
+                    <h3>Operador</h3><input class="input" type="text" id="filtro-operador">
                 </div>
                 <div class="peneira">
-                    <h3>Tipo</h3><input class="input filtro-tipo" type="text">
+                    <h3>Tipo</h3><input class="input" type="text" id="filtro-tipo">
                 </div>
                 <div class="peneira">
                     
                     <h3>Terra_Mar</h3>
-                    <select class="input filtro-terra-mar">
+                    <select class="input" id="filtro-terra-mar">
                         <option>Selecione a opção</option>
                         <option>T</option>
                         <option>M</option>
@@ -395,11 +396,11 @@
                     <!-- <input class="input" type="text" id="filtro-terra-mar"> -->
                 </div>
                 <div class="peneira">
-                    <h3>Situação</h3><input class="input filtro-situacao" type="text">
+                    <h3>Situação</h3><input class="input" type="text" id="filtro-situacao">
                 </div>
                 <div class="peneira">
                     <h3>Estado</h3>
-                    <select class="input filtro-estado">
+                    <select class="input" id="filtro-estado">
                         <option>Selecione a opção</option>
                         <option>Rio de Janeiro - RJ</option>
                         <option>Paraná - PR</option>
@@ -409,7 +410,7 @@
 
                 <div class="peneira">
                     <div></div>
-                    <button  class="btn" id="btn-filtrar" onclick="btnFiltrar()">filtrar</button>
+                    <button  class="btn" id="btn-filtrar">filtrar</button>
                 </div>
 
 
@@ -525,7 +526,7 @@
                 </div>
                 <div class="poco2">
                     <img src="img/campo.png" class="imgPoco">
-                    <div>Nome de campo de produção onde se situa o poço (quando aplicável).</div>
+                    <div>Nome do campo de produção onde se situa o poço (quando aplicável).</div>
                 </div>
             </div>
             <div class="elementos2">
@@ -538,7 +539,7 @@
                 </div>
                 <div class="poco2">
                     <img src="img/bloco.png" class="imgPoco">
-                    <div>Nome da bacia sedimentar onde se situa o poço.</div>
+                    <div>Nome da bacia sedimentar onde se situa o poço (quando aplicável).</div>
                 </div>
             </div>
             <div class="elementos2">
