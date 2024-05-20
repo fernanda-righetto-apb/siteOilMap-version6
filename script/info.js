@@ -37,19 +37,25 @@ fechaInfo.addEventListener('click', () => {
 
     if(btnBlocos.checked){
         blocos.style.display = 'block';
+        infoBlocos.style.display = 'block';
+        detalhesBlocos.style.display = 'none';
     } 
     
     if(btnCampos.checked){
         iconeCampos.style.display = 'block';
-        campos.style.display = 'none';     
+        campos.style.display = 'none';
+        detalhesCampos.style.display = 'none';
+        infoCampos.style.display = 'block';     
         zoom.removeAttribute('class', 'zoom-es');
     }
 
     if(btnBacia.checked){
 
         icone_bacia_do_panara.style.display = 'block';
-        contador_icone_do_parana = true;
         bacia_do_panara.style.display = 'none';
+        detalhesBacias.style.display = 'none';
+        infoBacias.style.display = 'block';
+        contador_icone_do_parana = true;
     }
 
     mapMaker.setAttribute('class', 'none');

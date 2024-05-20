@@ -1,8 +1,10 @@
 const campos = document.querySelector('#campos');
 const btnCampos = document.querySelector('#btn-campos');
 const iconeCampos = document.querySelector('#icone-campos');
-let contadorIconeCampos = true;
 const infoCampos = document.querySelector('#info-campos');
+const detalhesCampos = document.querySelector('.detalhesCampos');
+let contadorIconeCampos = true;
+
 
 btnCampos.addEventListener('click', () => {
 
@@ -20,6 +22,7 @@ btnCampos.addEventListener('click', () => {
         zoom.removeAttribute('class', 'zoom-es');
         campos.style.display = 'none';
         infoCampos.style.display = 'none';
+        detalhesCampos.style.display = 'none';
     } else {
 
         iconeCampos.style.display = 'none';
@@ -27,6 +30,7 @@ btnCampos.addEventListener('click', () => {
         zoom.removeAttribute('class', 'zoom-es');
         campos.style.display = 'none';
         infoCampos.style.display = 'none';
+        detalhesCampos.style.display = 'none';
     }
 })
 
@@ -40,4 +44,6 @@ iconeCampos.addEventListener('click', () => {
     blocos.style.display = 'none';
     icone_bacia_do_panara.style.display = 'none';
     infoPocos.style.display = 'none';
+    infoCampos.style.display = 'none';
+    detalhesCampos.style.display = 'block';
 })

@@ -3,7 +3,7 @@ const infoPocos = document.querySelector('#info-pocos');
 
 btnPocos.addEventListener('click', () => {
     if(btnPocos.checked){
-        poco.setAttribute('class', 'block');
+        poco.style.display = 'block';
         mapa__svg.setAttribute('class', 'mapa__svg setentaPorcento');
         info.setAttribute('class', 'informacoes block');
         infoPocos.style.display ='block';

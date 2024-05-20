@@ -1,10 +1,9 @@
 const btnBacia = document.querySelector('#btnBacia');
 const icone_bacia_do_panara = document.querySelector('#icone-bacia-do-parana');
 const bacia_do_panara = document.querySelector('#bacia-do-parana');
-let contador_icone_do_parana = true;
 const infoBacias = document.querySelector('#info-bacias');
-//bacia do parana
-
+const detalhesBacias = document.querySelector('.detalhesBacias');
+let contador_icone_do_parana = true;
 
 btnBacia.addEventListener('click', () => {
 
@@ -20,6 +19,7 @@ btnBacia.addEventListener('click', () => {
         icone_bacia_do_panara.style.display = 'none';
         bacia_do_panara.style.display = 'none';
         infoBacias.style.display = 'none';
+        detalhesBacias.style.display = 'none';
         
     } else {
         
@@ -27,6 +27,7 @@ btnBacia.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes');
         bacia_do_panara.style.display = 'none';
         infoBacias.style.display = 'none';
+        detalhesBacias.style.display = 'none';
     }
 })
 
@@ -53,10 +54,8 @@ icone_bacia_do_panara.addEventListener('click', () => {
     blocos.style.display = 'none';
     campos.style.display = 'none';
     infoPocos.style.display = 'none';
+    infoBacias.style.display =  'none';
+    detalhesBacias.style.display = 'block';
 });
-
-
-//bacia de santos
-
 
 

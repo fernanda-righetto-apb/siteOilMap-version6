@@ -3,13 +3,22 @@ const btnPesquisa = document.querySelector('#btnPesquisa');
 const imgfiltro_menu2 = document.querySelector('#imgfiltro_menu2');
 const pesquisa1 = document.querySelector('#pesquisa1');
 const corpo = document.querySelector('body');
+const pesquisa = document.querySelector('.filtro-pesquisa');
 let contadorPesquisar = true;
 
-/*btnPesquisa.addEventListener('click', () => {
-    if(inputPesquisa.value === '1-NAB-6-SE52'){
-        poco.setAttribute('class', 'block');
+imgPesquisa.addEventListener('click', () => {
+    if(pesquisa.value === '1-NAB-6-SE52'){
+        poco.style.display = 'block';
     }
-});*/
+});
+
+document.addEventListener('keypress', function(event) {
+    if(event.key === 'Enter'){
+        if(pesquisa.value === '1-NAB-6-SE52'){
+            poco.style.display = 'block';
+        }
+    }
+})
 
 imgfiltro_menu2.addEventListener('click', () => {
     if(contadorPesquisar){
