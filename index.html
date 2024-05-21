@@ -136,10 +136,10 @@
                 <DIV  class="final">
                     <h1 class="h1" style="text-align: center;">MAIS INFORMAÇÕES</h1>
                     <div ><h1 class="h1-2" style="border: none; text-align: center;" >EXPLORAÇÃO E PRODUÇÃO</h1></div>
-                    <div class="cinza"><h4 class="h4" style="text-align: center;" onclick="location.href='https://www.petrobras.com.br/quem-somos/exploracao-e-producao';">Clique aqui para saber mais!</h4></div>
+                    <div class="cinza"><h4 class="h4" style="text-align: center;cursor: pointer;" onclick="location.href='https://www.petrobras.com.br/quem-somos/exploracao-e-producao';">Clique aqui para saber mais!</h4></div>
 
                     <div ><h1 class="h1-2" style="border: none; text-align: center;" >ENTENDENDO O PRÉ SAL</h1></div>
-                    <div class="cinza"><h4 class="h4" style="text-align: center;"  onclick="location.href='https://www.petrobras.com.br/pre-sal';">Clique aqui para saber mais!</h4></div>
+                    <div class="cinza"><h4 class="h4" style="text-align: center; cursor: pointer;"  onclick="location.href='https://www.petrobras.com.br/pre-sal';">Clique aqui para saber mais!</h4></div>
                 </DIV>
             
             </div>
@@ -356,7 +356,12 @@
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Local onde estão situados os poços, blocos, bacias e campos (quando aplicável).">?</div>
                             <h3>Estado</h3>
-                            <input  class="input2">
+                            <select class="input2" id="filtro-estado">
+                                <option>Selecione a opção</option>
+                                <option>Rio de Janeiro - RJ</option>
+                                <option>Paraná - PR</option>
+                            </select>
+                            <!-- <input  class="input2"> -->
                         </div>
                         <!-- <div class="peneira2 peneira3">
                             <div class="interrogacao">?</div>

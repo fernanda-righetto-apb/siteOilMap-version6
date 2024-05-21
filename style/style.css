@@ -65,7 +65,7 @@
         grid-template-columns: 50% 50%;
         text-align: center;
         font-size: 16px;
-        min-height: 5vh;
+        min-height: 9vh;
     }
     .footer_caixa{
         display: grid;
@@ -413,6 +413,7 @@
         right: 8px;
         bottom: 75px;
         width: 360px;
+        height: 62vh;
         border: 4px solid green;
         border-radius: 25px 25px 0 0;
         padding-bottom: 10px;
@@ -427,11 +428,13 @@
         display: flex;
         justify-content: center;
     }
-    .txt2{
+    .txt2 .busca{
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 15px;
     }
+
+   
     .peneira2{
         grid-template-columns: 10% 32% 58%;
     }
@@ -463,9 +466,7 @@
     .btn4{
         display: none;
     }
-    .txt2{
-        display: none;
-    }
+
     .opaco{
         opacity: 85%;   
     }
@@ -585,10 +586,25 @@
         z-index: 1;
     }
 
+    .txt2-inferior {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        visibility: hidden;
+        position: relative;
+    }
+    .txt2-inferior::after {
+        visibility: visible;
+        position: absolute;
+        top: 0vh;
+        left: 2vw;
+        content: "Para mais informações acesse o menu abaixo.";
+    }
+
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     .poco2 {
         width: 393px;
     }
@@ -664,7 +680,7 @@
         left: 3vw;
         bottom: 75px;
         width: 94vw;
-        height: 61vh;
+        height: 60vh;
         border: 4px solid green;
         border-radius: 25px 25px 0 0;
         padding-bottom: 10px;
@@ -708,8 +724,9 @@
     .txt2-inferior::after {
         visibility: visible;
         position: absolute;
+        margin: -1rem;
         top: 0vh;
-        left: 7vw;
+        left: 9.5vw;
         content: "Para mais informações acesse o menu abaixo.";
     }
     .input2 {
@@ -740,8 +757,9 @@
     }
     .pesquisa {
         left: 2px;
+       align-items: center;
         top: 290px;
-        width: 409px;
+        width: 372px;
     }
     .pesquisa1-desaparecer {
         display: none;
@@ -811,5 +829,34 @@
     }
     input:checked+.slider:before {
         transform: translateX(5vw);
+    }
+}
+
+@media screen and (max-width: 375px){
+    .filtro2{
+        height: 70vh;
+    }   
+
+    .pesquisa {
+        left: 18px;
+        align-items: center;
+        top: 290px;
+        width: 310px;
+    }
+
+    .txt2-inferior {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        visibility: hidden;
+        position: relative;
+    }
+    .txt2-inferior::after {
+        visibility: visible;
+        position: absolute;
+        margin: -1rem;
+        top: 0vh;
+        left: 6vw;
+        content: "Para mais informações acesse o menu abaixo.";
     }
 }
